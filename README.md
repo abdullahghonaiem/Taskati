@@ -31,9 +31,6 @@ Taskati is a modern, responsive Kanban task management application built with Re
 
 - Node.js (v16 or later)
 - npm or yarn
-- Supabase account
-- OpenAI API key (for AI features)
-- PayPal Developer account (for payment integration)
 
 ### Installation
 
@@ -50,16 +47,7 @@ Taskati is a modern, responsive Kanban task management application built with Re
    yarn install
    ```
 
-3. **Set up environment variables**
-   Create a `.env` file in the root directory:
-   ```env
-   VITE_SUPABASE_URL=your_supabase_url
-   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-   VITE_OPENAI_API_KEY=your_openai_api_key
-   VITE_PAYPAL_CLIENT_ID=your_paypal_client_id
-   ```
-
-4. **Start the development server**
+3. **Start the development server**
    ```bash
    npm run dev
    # or
@@ -71,14 +59,17 @@ Taskati is a modern, responsive Kanban task management application built with Re
 
 ## 📸 Screenshots
 
-### Dashboard View
-![Dashboard](screenshots/dashboard.png)
+### Login Page
+![Login Page](screenshots/login.png)
+
+### Boards Overview
+![Boards](screenshots/boards.png)
 
 ### Task Creation
-![Task Creation](screenshots/create-task.png)
+![Task Creation](screenshots/task-creation.png)
 
-### Mobile View
-![Mobile View](screenshots/mobile-view.png)
+### Payment Integration
+![Payment](screenshots/payment.png)
 
 ## 📂 Project Structure
 
