@@ -1,23 +1,120 @@
-# React + TypeScript + Vite
+# Taskati - Modern Kanban Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Taskati Logo](public/vite.svg)
 
-Currently, two official plugins are available:
+Taskati is a modern, responsive Kanban task management application built with React, TypeScript, and Supabase. Organize your tasks with an intuitive drag-and-drop interface, AI-powered task suggestions, and real-time updates.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- **Kanban Board**: Visual task management with drag-and-drop functionality
+- **AI-Powered**: Get smart task suggestions using OpenAI
+- **Real-time Sync**: Powered by Supabase for seamless collaboration
+- **Responsive Design**: Works on desktop and mobile devices
+- **Dark Mode**: Eye-friendly dark theme
+- **Task Organization**: Categorize tasks with labels, priorities, and due dates
+- **User Authentication**: Secure sign-up and login
+- **Subscription Plans**: Multiple plans with different task limits
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
+- **Frontend**: React 18, TypeScript, Vite
+- **Styling**: Tailwind CSS, CSS Modules
+- **State Management**: React Context API
+- **Backend**: Supabase (Auth, Database, Storage)
+- **AI**: OpenAI API
+- **Payments**: PayPal Integration
+- **UI Components**: Radix UI, Lucide Icons
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or later)
+- npm or yarn
+- Supabase account
+- OpenAI API key (for AI features)
+- PayPal Developer account (for payment integration)
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/abdullahghonaiem/Taskati.git
+   cd Taskati
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Set up environment variables**
+   Create a `.env` file in the root directory:
+   ```env
+   VITE_SUPABASE_URL=your_supabase_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   VITE_OPENAI_API_KEY=your_openai_api_key
+   VITE_PAYPAL_CLIENT_ID=your_paypal_client_id
+   ```
+
+4. **Start the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. **Open in browser**
+   Visit `http://localhost:5173`
+
+## 📸 Screenshots
+
+### Dashboard View
+![Dashboard](screenshots/dashboard.png)
+
+### Task Creation
+![Task Creation](screenshots/create-task.png)
+
+### Mobile View
+![Mobile View](screenshots/mobile-view.png)
+
+## 📂 Project Structure
+
+```
+src/
+├── components/       # Reusable UI components
+├── lib/              # Utility functions and services
+├── services/         # API and service integrations
+├── styles/           # Global styles and themes
+└── App.tsx          # Main application component
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [Vite](https://vitejs.dev/) for the amazing build tooling
+- [Supabase](https://supabase.com/) for the awesome backend
+- [Tailwind CSS](https://tailwindcss.com/) for the utility-first CSS framework
+- [Radix UI](https://www.radix-ui.com/) for accessible UI primitives
+
+---
+
+Made with ❤️ by [Your Name]
     // Optionally, add this for stylistic rules
     ...tseslint.configs.stylisticTypeChecked,
   ],
